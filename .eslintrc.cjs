@@ -30,5 +30,10 @@ module.exports = {
         "react"
     ],
     "rules": {
+        '@typescript-eslint/no-unused-vars': [
+			'warn',
+			{ vars: 'all', args: 'all', ignoreRestSiblings: false, argsIgnorePattern: '^_$' },
+		],
+        '@typescript-eslint/consistent-type-imports': 'warn',
     }
 }
